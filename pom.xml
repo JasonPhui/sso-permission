@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.ph</groupId>
+    <artifactId>sso</artifactId>
+    <version>1.0</version>
+
+    <profiles>
+        <!-- 开发环境 -->
+        <profile>
+            <id>dev</id>
+            <properties>
+                <env>dev</env>
+                <log.level>debug</log.level>
+                <log.url>/logs</log.url>
+            </properties>
+            <!--默认启用的环境-->
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <!-- 生产环境 -->
+        <profile>
+            <id>pro</id>
+            <properties>
+                <env>pro</env>
+                <log.level>info</log.level>
+                <log.url>/logs</log.url>
+            </properties>
+        </profile>
+    </profiles>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <!--先过滤掉所有配置，防止生成目录中含有无效目录 -->
+                <excludes>
+                    <exclude>dev/**</exclude>
+                    <exclude>pro/**</exclude>
+                </excludes>
+            </resource>
+
+            <resource>
+                <directory>src/main/resources/${env}</directory>
+            </resource>
+        </resources>
+    </build>
+    
+</project>
