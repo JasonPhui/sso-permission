@@ -7,7 +7,7 @@
     <groupId>org.ph</groupId>
     <artifactId>sso-permission</artifactId>
     <version>1.0</version>
-
+    <packaging>pom</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
@@ -221,29 +221,6 @@
             <version>${druid.version}</version>
         </dependency>
 
-        <!-- 日志 -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>${slf4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-core</artifactId>
-            <version>${logback.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>${logback.version}</version>
-        </dependency>
-
-        <!-- 日志桥接，Spring中commons-logging替换为logback -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>jcl-over-slf4j</artifactId>
-            <version>${jcl.version}</version>
-        </dependency>
 
         <!-- Java发送邮件 -->
         <dependency>
