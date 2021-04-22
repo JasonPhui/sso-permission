@@ -20,7 +20,7 @@
         <spring-redis.version>1.2.2.RELEASE</spring-redis.version>
         <aspectj.version>1.8.9</aspectj.version>
         <jta.version>1.1</jta.version>
-        <mybatis.version>3.3.0</mybatis.version>
+        <mybatis.version>3.5.6</mybatis.version>
         <mybatis-spring.version>1.2.3</mybatis-spring.version>
         <druid.version>1.0.15</druid.version>
         <mysql.version>5.1.36</mysql.version>
