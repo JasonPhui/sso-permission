@@ -16,7 +16,7 @@
         <servlet.version>3.1.0</servlet.version>
         <junit.version>4.12</junit.version>
 
-        <spring.version>4.2.1.RELEASE</spring.version>
+        <spring.version>5.2.22.RELEASE</spring.version>
         <spring-redis.version>1.2.2.RELEASE</spring-redis.version>
         <aspectj.version>1.8.9</aspectj.version>
         <jta.version>1.1</jta.version>
