@@ -39,7 +39,7 @@
         <jsp-api.version>2.2</jsp-api.version>
         <activemq.version>5.13.3</activemq.version>
         <hessian.version>4.0.38</hessian.version>
-        <dubbo.version>2.5.3</dubbo.version>
+        <dubbo.version>2.6.12</dubbo.version>
         <zookeeper.version>0.1</zookeeper.version>
         <netty.version>4.0.23.Final</netty.version>
         <swagger.version>1.5.10</swagger.version>
